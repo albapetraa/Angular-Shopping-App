@@ -1,6 +1,9 @@
 # Shop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+shop.json file is database for products and categories.
+You can use json-server for shop.json file.
+
 
 ## Development server
 
