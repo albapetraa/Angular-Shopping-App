@@ -1,0 +1,29 @@
+<body class="text-center">
+
+    <main class="form-signin">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72"
+                height="57">
+            <h1 class="h3 mb-3 fw-normal">Sisteme Giriş</h1>
+
+            <div class="form-floating">
+                <input type="text" #userName="ngModel" [(ngModel)]="model.userName" class="form-control" id="userName"
+                    name="userName" placeholder="Kullanıcı Adı" required autofocus>
+                <label for="floatingInput">Kullanıcı Adı</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" #password="ngModel" [(ngModel)]="model.userPass" class="form-control"
+                    id="password" name="password" placeholder="Şifre" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div *ngIf="isOk==false" class="alert alert-danger">Kullanıcı adı veya şifre yanlış</div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Giriş Yap</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        </form>
+    </main>
+
+
+
+
+
+</body>
